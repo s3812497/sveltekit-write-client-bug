@@ -1,6 +1,5 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
@@ -13,7 +12,7 @@
 	<h1>
 		<span class="welcome">
 			<picture>
-				<source srcset={welcome} type="image/webp" />
+				<!-- <source srcset={welcome} type="image/webp" /> -->
 				<img src={welcome_fallback} alt="Welcome" />
 			</picture>
 		</span>
@@ -35,6 +34,7 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
+		background-image: url('favicon.png');
 	}
 
 	h1 {
